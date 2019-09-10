@@ -35,7 +35,7 @@ namespace WestWindConsole.Entities
         [NotMapped]
         public string FullName
         { get { return FirstName + " " + LastName; } }
-        #endregion
+        #endregion 
 
         #region Navigation Properties
         // TODO: Introducing Navigation Properties

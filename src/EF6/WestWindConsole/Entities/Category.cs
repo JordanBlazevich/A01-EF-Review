@@ -9,10 +9,16 @@ using System.Threading.Tasks;
 namespace WestWindConsole.Entities
 {
     // TODO: Begin reviewing entity attributes
-    [Table("Categories")]
+    // Identifies which DB table this entity is supposed to represent (be mapped to)
+    // Table names plural, class names singular
+
+        //Aspect oriented programming, useful for tooling, using attributes
+
+    [Table("Categories", Schema = "dbo")] //This is an attribute, used to clarify things with the DB. Takes DB name.
+    // A schema is - short for schematic, almost like a namespace where you have multiple tables
     public class Category
     {
-        [Key]
+        [Key] //Indicates that this property maps to the PK of the DB
         public int CategoryID { get; set; }
 
         [Required] // Use this for string/varchar columns that are NOT NULL
