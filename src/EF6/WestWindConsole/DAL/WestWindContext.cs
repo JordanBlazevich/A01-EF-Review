@@ -37,7 +37,7 @@ namespace WestWindConsole.DAL
         public DbSet<ManifestItem> ManifestItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Payment> Payments { get; set; }
-        public DbSet<PaymentType> PaymentType { get; set; }
+        public DbSet<PaymentType> PaymentTypes { get; set; }
         public DbSet<Region> Regions { get; set; }
         public DbSet<Territory> Territories { get; set; }
 
